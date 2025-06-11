@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Free $50 Cash</title>
+
+<!-- Open Graph meta tags for social sharing -->
+<meta property="og:title" content="Free $50 Cash" />
+<meta property="og:description" content="Claim now to get $50 for free" />
+<meta property="og:image" content="https://i.postimg.cc/dV5g75DC/photo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://arifmiaz907.github.io/techgiftcard/nigeria/
+" />
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+  .container {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 6px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .hidden { display: none; }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  input, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .highlight-box {
+    background-color: #e8f9e9;
+    padding: 10px;
+    border-left: 5px solid green;
+    margin: 20px 0;
+    border-radius: 6px;
+  }
+  .progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  .progress {
+    width: 0%;
+    height: 20px;
+    background: green;
+    transition: width 2s;
+  }
+  .comment-section {
+    margin-top: 30px;
+    text-align: left;
+  }
+  .comment {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  .comment img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+  .comment-content {
+    background: #f0f2f5;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 400px;
+  }
+  .comment-content p {
+    margin: 4px 0;
+  }
+  .comment-meta {
+    font-size: 12px;
+    color: black;
+  }
+  .comment-meta span {
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://i.postimg.cc/dV5g75DC/photo.png" style="width:100%; border-radius:10px;" />
+  <h2>Free $50 Cash</h2>
+  <div id="topOfferText" class="highlight-box">
+    Claim now to get $50 for free
+  </div>
+  <button id="claimBtn" onclick="showForm()">Claim Now</button>
+
+  <div id="formBox" class="hidden">
+    <select id="operator">
+      <option value="">Select Operator</option>
+      <option value="MTN">MTN</option>
+      <option value="Airtel">Airtel</option>
+      <option value="Glo">Glo</option>
+      <option value="9mobile">9mobile</option>
+    </select><br>
+    <input type="tel" id="phone" placeholder="Enter your mobile number" pattern="[0][789][01][0-9]{8}" required />
+    <button onclick="submitNumber()">Submit</button>
+  </div>
+
+  <div id="processingBox" class="hidden">
+    <p>Offer is being processed...</p>
+    <div class="progress-bar">
+      <div class="progress" id="progressBar"></div>
+    </div>
+  </div>
+
+  <div id="whatsappShareBox" class="hidden">
+    <p>✅ Your number is eligible for $50.<br>Share with 10 friends on WhatsApp to get the offer.</p>
+    <button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+  </div>
+
+  <div id="nameInputBox" class="hidden name-box">
+    <p><strong>This step is very important</strong><br>Enter your name to claim the $50 cash.</p>
+    <input type="text" id="username" placeholder="Enter your name" /><br><br>
+    <button onclick="finalStep()">OK</button>
+  </div>
+
+  <div class="comment-section">
+    <div class="comment">
+      <img src="https://i.postimg.cc/VvzFWcVk/istockphoto-1671407049-612x612.jpg" alt="Chinedu">
+      <div class="comment-content">
+        <p><strong>Chinedu Okafor</strong></p>
+        <p>I just received my $50, this is real!</p>
+        <div class="comment-meta"><span>30 mins</span> <span>Like</span> <span>Reply</span></div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="https://i.postimg.cc/prnGXHqz/istockphoto-517301140-612x612.jpg" alt="Ngozi">
+      <div class="comment-content">
+        <p><strong>Ngozi Umeh</strong></p>
+        <p>Shared with my friends, hope they also get it!</p>
+        <div class="comment-meta"><span>1 hr</span> <span>Like</span> <span>Reply</span></div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Tunde">
+      <div class="comment-content">
+        <p><strong>Tunde Balogun</strong></p>
+        <p>This offer is amazing, thank you!</p>
+        <div class="comment-meta"><span>2 hrs</span> <span>Like</span> <span>Reply</span></div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="https://i.postimg.cc/G3N2Dj8Z/istockphoto-2117691397-612x612.jpg" alt="Amina">
+      <div class="comment-content">
+        <p><strong>Amina Bello</strong></p>
+        <p>Wow I just got mine too 💵💵💵</p>
+        <div class="comment-meta"><span>3 hrs</span> <span>Like</span> <span>Reply</span></div>
+      </div>
+    </div>
+    <div class="comment">
+      <img src="https://randomuser.me/api/portraits/men/38.jpg" alt="Ibrahim">
+      <div class="comment-content">
+        <p><strong>Ibrahim Musa</strong></p>
+        <p>Legit! I received payment instantly after sharing on WhatsApp ✅</p>
+        <div class="comment-meta"><span>4 hrs</span> <span>Like</span> <span>Reply</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showForm() {
+    document.getElementById("formBox").classList.remove("hidden");
+  }
+  function submitNumber() {
+    const phone = document.getElementById("phone").value;
+    const operator = document.getElementById("operator").value;
+    if (!/^0[789][01][0-9]{8}$/.test(phone) || operator === "") {
+      alert("Please enter a valid Nigerian mobile number and select operator.");
+      return;
+    }
+    document.getElementById("formBox").classList.add("hidden");
+    document.getElementById("processingBox").classList.remove("hidden");
+    let progress = document.getElementById("progressBar");
+    progress.style.width = "0%";
+    setTimeout(() => { progress.style.width = "100%"; }, 100);
+    setTimeout(() => {
+      document.getElementById("processingBox").classList.add("hidden");
+      document.getElementById("whatsappShareBox").classList.remove("hidden");
+      document.getElementById("topOfferText").style.display = "none";
+      document.getElementById("claimBtn").style.display = "none";
+    }, 2500);
+  }
+  function shareOnWhatsApp() {
+    const message = encodeURIComponent("I got $50 free cash from this link! Hurry up 👉 https://arifmiaz907.github.io/techgiftcard/nigeria/
+");
+    const url = `https://wa.me/?text=${message}`;
+    window.open(url, '_blank');
+    document.getElementById("whatsappShareBox").classList.add("hidden");
+    document.getElementById("nameInputBox").classList.remove("hidden");
+  }
+  function finalStep() {
+    const name = document.getElementById("username").value.trim();
+    if (!name) {
+      alert("Please enter your name");
+      return;
+    }
+    window.location.href = "https://www.profitableratecpm.com/q1a7j5p8c?key=30a918d81824329881633bda86afa84d";
+  }
+</script>
+</body>
+</html>
